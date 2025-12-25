@@ -20,7 +20,7 @@ for letter in "Hello world!":
 # task 04 == Зробіть так, щоб кількість бананів була
 # завжди в чотири рази більша, ніж яблук
 apples = 2
-banana =apples*4
+banana = apples * 4
 print ("яблук:", apples)
 print ("бананів:", banana)
 
@@ -51,10 +51,10 @@ print("Периметр:", perimetery, "см")
 #У саду посадили 4 яблуні. Груш на 5 більше яблунь, а слив - на 2 менше.
 #Скільки всього дерев посадили в саду?
 
-apple=4
-peer=apple+5
-plum=apple-2
-sum_three=apple+peer+plum
+apple = 4
+peer = apple + 5
+plum = apple - 2
+sum_three = apple + peer + plum
 print("Всього посадили дерев", sum_three)
 print ("Яблук -", apple, "Груш -", peer, "Слив -", plum)
 
@@ -63,10 +63,10 @@ print ("Яблук -", apple, "Груш -", peer, "Слив -", plum)
 #Після обіду температура опустилася на 10 градусів.
 #Надвечір потепліло на 4 градуси. Яка температура надвечір?
 
-var_1=5
-var_2=var_1-10
-var_3=var_2+4
-tempt="Температура"
+var_1 = 5
+var_2 = var_1 - 10
+var_3 = var_2 + 4
+tempt = "Температура"
 print (tempt, "до обіда:", var_1)
 print (tempt, "після обіду:", var_2)
 print (tempt, "надвечір:", var_3)
@@ -78,9 +78,9 @@ print (tempt, "надвечір:", var_3)
 ##Скількі сьогодні дітей у театральному гуртку?
 #"""
 
-boys=24
-girls=boys//2
-print ("Сьогодні у театральному гуртку ", boys-1 + girls-2, "дітей")
+boys = 24
+girls = boys // 2
+print ("Сьогодні у театральному гуртку ", boys - 1 + girls - 2, "дітей")
 
 
 # task 10
@@ -89,10 +89,10 @@ print ("Сьогодні у театральному гуртку ", boys-1 + gi
 #а третя - як половина вартості першої та другої разом.
 #Скільки будуть коштувати усі книги, якщо купити по одному примірнику?
 
-var1=8
-var2=var1+2
-var3=(var1+var2)//2
-sum=var1+var2+var3
+var1 = 8
+var2 = var1 + 2
+var3 = (var1+var2) // 2
+sum = var1 + var2 + var3
 print("Перша книга -", var1, "грн")
 print("Друга книга -", var2, "грн")
 print("Третя книга -", var3, "грн")
