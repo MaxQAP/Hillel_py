@@ -79,17 +79,44 @@ else:
 """
 adwentures_of_tom_sawer_sentences = None
 
+adwentures_of_tom_sawer_sentences = [
+    s.strip()
+    for s in adwentures_of_tom_sawer.replace('\n', ' ').split('.')
+    if s.strip()
+]
+
 # task 08
 """ Виведіть четверте речення з adwentures_of_tom_sawer_sentences.
 Перетворіть рядок у нижній регістр.
 """
-
+adwentures_of_tom_sawer = adwentures_of_tom_sawer.replace("\n", "")
+adwentures_of_tom_sawer = adwentures_of_tom_sawer.replace("....", "")
+sentences = [s.strip() for s in adwentures_of_tom_sawer.split('.') if s.strip()]
+four_sentence = sentences[3]
+print(sentences[3].lower())
 
 # task 09
 """ Перевірте чи починається якесь речення з "By the time".
 """
-
+import re
+adwentures_of_tom_sawer = adwentures_of_tom_sawer.replace('\n', ' ').replace('....', '.')
+var1 = re.findall(r'(?:^|\.\s*)(By the time[^.]*\.)', adwentures_of_tom_sawer)
+if var1:
+        print("Так є речення з By the time ")
+        for sentence in var1:
+            print(sentence.strip())
+else:
+        print("Немає такого речення")
 
 # task 10
 """ Виведіть кількість слів останнього речення з adwentures_of_tom_sawer_sentences.
 """
+
+adwentures_of_tom_sawer = adwentures_of_tom_sawer.replace("\n", "")
+adwentures_of_tom_sawer = adwentures_of_tom_sawer.replace("....", "")
+sentences = [s.strip() for s in adwentures_of_tom_sawer.split('.') if s.strip()]
+last_sentence = sentences[-1]
+words = last_sentence.split()
+words_count = len(words)
+print("Останнє речення -", last_sentence)
+print("Кількість слів у реченні - ", words_count)
