@@ -34,5 +34,5 @@ print()
 student_1.set_average_score(95)
 #student_1.set_average_score(101) - приклад для виведення помилки
 
-print("Новий середній бал:",student_1.average_score)
+print("Змінений середній бал:",student_1.average_score)
 
