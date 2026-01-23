@@ -136,7 +136,28 @@ print(lst2)
 
 
 # task 9
-# task 10
+def has_both_h_and_H(text):
+    return 'h' in text.lower() and 'H' in text.upper()
+
+
+
+while True:
+    word = input("Enter your text: ")
+    if has_both_h_and_H(word):
+        print("Знайдено шукане значення:")
+    else:
+        print("Не знайдено шукане значення:")
+
+#task 10
+    def get_only_strings(items):
+        return [item for item in items if isinstance(item, str)]
+
+
+    lst1 = ['111', '2124', 33, True, 'False', 5, '6', 7, 8, 'Python', 9, 0, 'ENGLISH', 2424]
+
+    lst2 = get_only_strings(lst1)
+    print(lst2)
+
 """  Оберіть будь-які 4 таски з попередніх домашніх робіт та
 перетворіть їх у 4 функції, що отримують значення та повертають результат.
 Обоязково документуйте функції та дайте зрозумілі імена змінним.
