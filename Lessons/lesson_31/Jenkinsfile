@@ -18,7 +18,7 @@ pipeline {
                     python3 -m venv ${VENV}
                     source ${VENV}/bin/activate
                     pip3 install --upgrade pip
-                    pip3 install -r api_requirements.txt
+                    pip3 install -r Lessons/lesson_31/api_requirements.txt
                 """
             }
         }
