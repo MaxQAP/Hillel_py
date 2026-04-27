@@ -23,6 +23,7 @@ pipeline {
             }
         }
 
+
         stage('Run Auto-tests') {
             steps {
                 sh """
@@ -45,3 +46,4 @@ pipeline {
         }
     }
 }
+#fa
