@@ -26,9 +26,9 @@ pipeline {
 
         stage('Run Auto-tests') {
             steps {
-                sh """
-                    source ${VENV}/bin/activate
-                    pytest --junitxml=results.xml
+                 sh """
+                    source venv/bin/activate
+                    pytest Lessons/lesson_31/242.py --junitxml=results.xml
                 """
             }
         }
