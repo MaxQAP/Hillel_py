@@ -1,0 +1,12 @@
+import pytest
+from pathlib import Path
+
+
+
+@pytest.fixture
+def setup_invalid_json(tmp_path):
+    invalid_file = tmp_path / "test_json.json"
+    invalid_file.write_text('{ "broken": json }')  # невалідний JSON
+    return tmp_path
+
+
